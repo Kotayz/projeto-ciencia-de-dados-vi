@@ -8,15 +8,15 @@ read response
 if [ $response -eq 1 ]
 then
     echo "Criando container basic"
-	#lxc launch ubuntu:18.04 -p default -p basic
+	lxc launch ubuntu:18.04 -p default -p basic
 elif [ $response -eq 2 ]
 then
 	echo "Criando container standard"
-	#lxc launch ubuntu:18.04 -p default -p standard
+	lxc launch ubuntu:18.04 -p default -p standard
 elif [ $response -eq 3 ]
 then
 	echo "Criando container premium"
-	#lxc launch ubuntu:18.04 -p default -p premium
+	lxc launch ubuntu:18.04 -p default -p premium
 else
     echo "opção invalida"
 fi

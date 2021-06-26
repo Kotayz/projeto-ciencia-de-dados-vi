@@ -1,31 +1,18 @@
 # Projeto Ciência de Dados VI
 
-Execução de Script de Criação de instâncias:
+## Execução de Script de Criação de instâncias:
 
 ```
 sh criar-instancia.sh
 ```
 
-## Criação de Perfis
+## Criação e Configuração de Perfis
 
 ### Basic
 ```
 lxc profile create basic
 ```
 
-### Standard
-```
-lxc profile create standard
-```
-
-### Premium
-```
-lxc profile create premium
-```
-
-## Configurar Perfis
-
-### Basic
 ```
 lxc profile edit basic
 ```
@@ -50,7 +37,11 @@ config:
 
 ### Standard
 ```
-lxc profile edit basic
+lxc profile create standard
+```
+
+```
+lxc profile edit standard
 ```
 
 Incluir as seguintes configurações:
@@ -73,7 +64,11 @@ config:
 
 ### Premium
 ```
-lxc profile edit basic
+lxc profile create premium
+```
+
+```
+lxc profile edit premium
 ```
 
 Incluir as seguintes configurações:
@@ -93,3 +88,15 @@ config:
   limits.cpu: 4
   limits.memory: 3072MB
 ```
+
+## Listar Instancias
+lxc list
+
+## Parar Instancia
+lxc stop <nome_da_instancia>
+
+## Iniciar Instancia
+lxc start <nome_da_instancia>
+
+## Remover Instancia
+lxc delete <nome_da_instancia>
