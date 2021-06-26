@@ -90,13 +90,21 @@ config:
 ```
 
 ## Listar Instancias
-lxc list
+```
+lxc list -c ns,limits.memory:MEM,limits.cpu:CPU,mMuDc
+```
 
 ## Parar Instancia
+```
 lxc stop <nome_da_instancia>
+```
 
 ## Iniciar Instancia
+```
 lxc start <nome_da_instancia>
+```
 
 ## Remover Instancia
+```
 lxc delete <nome_da_instancia>
+```
