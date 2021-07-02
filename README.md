@@ -108,3 +108,7 @@ lxc start <nome_da_instancia>
 ```
 lxc delete <nome_da_instancia>
 ```
+
+## Exemplo de Execução
+
+![](execucao-do-sistema.gif width="400" height="790")
